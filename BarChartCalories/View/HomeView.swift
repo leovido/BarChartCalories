@@ -26,18 +26,22 @@ struct HomeView: View {
                 ZStack {
                     Color("appBackground").edgesIgnoringSafeArea(.all)
                     VStack(alignment: .leading) {
-                        Text("Calorie intake")
-                            .font(.title)
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.white)
-                            .padding(.bottom, 20)
-                        Text("Your daily calorie limit intake")
-                            .font(.headline)
-                            .foregroundColor(Color.white)
-                        Text("\(self.calorieLimit)kcal")
-                            .font(.title)
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.white)
+                        VStack(alignment: .leading) {
+                            Text("Calorie intake")
+                                .font(.title)
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color.white)
+                                .padding(.bottom, 10)
+                            Text("Your daily calorie limit intake")
+                                .font(.headline)
+                                .foregroundColor(Color.white)
+                            Text("\(self.calorieLimit)kcal")
+                                .font(.title)
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color.white)
+                        }
+                        .padding(.leading, 10)
+
                         Picker("Time of day filter", selection: self.$selection) {
                             Text("Morning")
                                 .tag(0)
