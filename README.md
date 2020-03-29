@@ -5,7 +5,7 @@ Application to track and display analytics of calories, exercise data, heart rat
 - SwiftUI
 - Animations
 
-## TODO
+## TODO
 - [ ] Login screen
 - [ ] Authentication
 - [ ] Filtering data
